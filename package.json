@@ -1,15 +1,20 @@
 {
-  "name": "@eslint/source",
-  "version": "0.0.0",
+  "name": "@davdevx/eslint",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "commit": "cz"
+  },
   "private": true,
   "dependencies": {},
   "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
     "@nx/js": "21.4.0",
     "@swc-node/register": "~1.9.1",
     "@swc/core": "~1.5.7",
     "@swc/helpers": "~0.5.11",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
     "nx": "21.4.0",
     "prettier": "^2.6.2",
     "tslib": "^2.3.0",
@@ -17,5 +22,10 @@
   },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }

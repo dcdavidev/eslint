@@ -1,3 +1,17 @@
 {
-  "recommendations": ["nrwl.angular-console", "esbenp.prettier-vscode"]
+  "recommendations": [
+    "nrwl.angular-console",
+    "esbenp.prettier-vscode",
+    "bierner.emojisense",
+    "streetsidesoftware.code-spell-checker",
+    "joshbolduc.commitlint",
+    "vivaxy.vscode-conventional-commits",
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "github.vscode-github-actions",
+    "github.vscode-pull-request-github",
+    "christian-kohler.npm-intellisense",
+    "christian-kohler.path-intellisense",
+    "redhat.vscode-yaml"
+  ]
 }

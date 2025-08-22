@@ -1,3 +1,13 @@
+## 0.2.0 (2025-08-22)
+
+### 🚀 Features
+
+- add README ([e818b00](https://github.com/davdevx/eslint/commit/e818b00))
+
+### ❤️ Thank You
+
+- Davide Di Criscito @davdevx
+
 ## 0.1.0 (2025-08-22)
 
 ### 🚀 Features

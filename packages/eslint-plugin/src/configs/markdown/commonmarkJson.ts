@@ -1,6 +1,7 @@
 import markdown from '@eslint/markdown';
 import type { Linter } from 'eslint';
 import { defineConfig } from 'eslint/config';
+import { OFF } from 'src/utils/severity.js';
 
 const markdownCommonmarkJsonConfig: Linter.Config[] = defineConfig([
   {
@@ -11,7 +12,7 @@ const markdownCommonmarkJsonConfig: Linter.Config[] = defineConfig([
       frontmatter: 'json',
     },
     rules: {
-      'markdown/no-html': 'off',
+      'markdown/no-html': OFF,
     },
   },
 ]);

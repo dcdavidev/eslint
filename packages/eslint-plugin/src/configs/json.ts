@@ -2,6 +2,7 @@ import json from '@eslint/json';
 import { Linter } from 'eslint';
 import { defineConfig } from 'eslint/config';
 import jsoncParser from 'jsonc-eslint-parser';
+import { ERROR, OFF } from 'src/utils/severity.js';
 
 const configJson: Linter.Config[] = defineConfig([
   {
@@ -13,8 +14,8 @@ const configJson: Linter.Config[] = defineConfig([
       parserOptions: { jsonSyntax: 'json' },
     },
     rules: {
-      'no-irregular-whitespace': 'off',
-      'json/no-duplicate-keys': 'error',
+      'no-irregular-whitespace': OFF,
+      'json/no-duplicate-keys': ERROR,
     },
   },
   {
@@ -26,8 +27,8 @@ const configJson: Linter.Config[] = defineConfig([
       parserOptions: { jsonSyntax: 'json5' },
     },
     rules: {
-      'no-irregular-whitespace': 'off',
-      'json/no-duplicate-keys': 'error',
+      'no-irregular-whitespace': OFF,
+      'json/no-duplicate-keys': ERROR,
     },
   },
   {
@@ -39,8 +40,8 @@ const configJson: Linter.Config[] = defineConfig([
       parserOptions: { jsonSyntax: 'jsonc' },
     },
     rules: {
-      'no-irregular-whitespace': 'off',
-      'json/no-duplicate-keys': 'error',
+      'no-irregular-whitespace': OFF,
+      'json/no-duplicate-keys': ERROR,
     },
   },
 ]);

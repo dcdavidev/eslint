@@ -4,6 +4,7 @@ import { createRequire } from 'module';
 import configIgnores from './configs/ignores.js';
 import configJson from './configs/json.js';
 import markdownConfigs from './configs/markdown/index.js';
+import javascriptConfigs from './configs/javascript/index.js';
 
 type Configs =
   | 'ignores'
@@ -13,7 +14,10 @@ type Configs =
   | 'markdownGithubToml'
   | 'markdownCommonmarkYaml'
   | 'markdownCommonmarkJson'
-  | 'markdownCommonmarkToml';
+  | 'markdownCommonmarkToml'
+  | 'javascriptBase'
+  | 'javascriptWebpack'
+  | 'javascriptYarnPnp';
 
 type EslintPluginConfigs = Record<Configs, Linter.Config[]>;
 
@@ -46,6 +50,9 @@ export const configs: EslintPluginConfigs = {
   markdownCommonmarkYaml: markdownConfigs.commonmarkYaml,
   markdownCommonmarkJson: markdownConfigs.commonmarkJson,
   markdownCommonmarkToml: markdownConfigs.commonmarkToml,
+  javascriptBase: javascriptConfigs.base,
+  javascriptWebpack: javascriptConfigs.webpack,
+  javascriptYarnPnp: javascriptConfigs.yarnPnp,
 };
 
 // Extends eslint plugin config object with the defined configurations

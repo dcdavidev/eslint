@@ -2,6 +2,7 @@ import type { ESLint } from 'eslint';
 import { createRequire } from 'module';
 
 import configIgnores from './configs/ignores.js';
+import configJson from './configs/json.js';
 
 const require = createRequire(import.meta.url);
 const { version, name } = require('../package.json');
@@ -18,6 +19,7 @@ const plugin: ESLint.Plugin = {
 
 plugin.configs = Object.assign({}, plugin.configs, {
   ignores: configIgnores,
+  json: configJson,
 });
 
 export default plugin;

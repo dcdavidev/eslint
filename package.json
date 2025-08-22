@@ -2,7 +2,11 @@
   "name": "@davdevx/eslint",
   "license": "MIT",
   "scripts": {
-    "commit": "cz"
+    "commit": "cz",
+    "safe:build": "./scripts/safe-build.sh",
+    "presafe:build": "chmod +x ./scripts/safe-build.sh",
+    "safe:release": "./scripts/safe-release.sh",
+    "presafe:release": "chmod +x ./scripts/safe-release.sh"
   },
   "private": true,
   "dependencies": {},

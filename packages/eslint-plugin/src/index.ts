@@ -2,12 +2,12 @@ import type { ESLint, Linter } from 'eslint';
 import { createRequire } from 'module';
 
 import configIgnores from './configs/ignores.js';
+import javascriptConfigs from './configs/javascript/index.js';
+import configJsdoc from './configs/jsdoc.js';
 import configJson from './configs/json.js';
 import markdownConfigs from './configs/markdown/index.js';
-import javascriptConfigs from './configs/javascript/index.js';
-import typescriptConfigs from './configs/typescript/index.js';
-import configJsdoc from './configs/jsdoc.js';
 import prettierConfig from './configs/prettier.js';
+import typescriptConfigs from './configs/typescript/index.js';
 
 type Configs =
   | 'ignores'

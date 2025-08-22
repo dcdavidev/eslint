@@ -1,12 +1,12 @@
 import js from '@eslint/js';
+import type { Linter } from 'eslint';
+import { defineConfig } from 'eslint/config';
 import eslintPluginImport from 'eslint-plugin-import';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
 import { ERROR, OFF } from '../../utils/severity.js';
-import type { Linter } from 'eslint';
-import { defineConfig } from 'eslint/config';
 
 const tsWebpackConfig: Linter.Config[] = defineConfig([
   {
@@ -22,7 +22,6 @@ const tsWebpackConfig: Linter.Config[] = defineConfig([
       parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
-        project: true,
         tsconfigRootDir: process.cwd(),
         noWarnOnMultipleProjects: true,
       },

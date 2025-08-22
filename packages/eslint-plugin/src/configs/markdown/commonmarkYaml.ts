@@ -1,7 +1,8 @@
 import markdown from '@eslint/markdown';
 import type { Linter } from 'eslint';
 import { defineConfig } from 'eslint/config';
-import { OFF } from 'src/utils/severity.js';
+
+import { OFF } from '../../utils/severity.js';
 
 const markdownCommonmarkYamlConfig: Linter.Config[] = defineConfig([
   {

@@ -1,5 +1,5 @@
-import nx from '@nx/eslint-plugin';
 import davdevx from '@davdevx/eslint-plugin';
+import nx from '@nx/eslint-plugin';
 
 export default [
   ...davdevx.configs.ignores,
@@ -24,6 +24,8 @@ export default [
       ],
     },
   },
-  ...davdevx.configs['recommended/base'],
+  ...davdevx.configs.jsdoc,
+  ...davdevx.configs.json,
+  ...davdevx.configs.markdownGithubYaml,
   ...davdevx.configs.prettier,
 ];

@@ -1,4 +1,4 @@
-import { Linter } from 'eslint';
+import type { Linter } from 'eslint';
 
 import markdownCommonmarkJsonConfig from './commonmarkJson.js';
 import markdownCommonmarkTomlConfig from './commonmarkToml.js';

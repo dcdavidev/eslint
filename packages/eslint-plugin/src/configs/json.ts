@@ -1,5 +1,5 @@
 import json from '@eslint/json';
-import { Linter } from 'eslint';
+import type { Linter } from 'eslint';
 import { defineConfig } from 'eslint/config';
 import jsoncParser from 'jsonc-eslint-parser';
 import { ERROR, OFF } from 'src/utils/severity.js';

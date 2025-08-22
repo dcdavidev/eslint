@@ -1,12 +1,11 @@
 import nx from '@nx/eslint-plugin';
+import davdevx from '@davdevx/eslint-plugin';
 
 export default [
+  ...davdevx.configs.ignores,
   ...nx.configs['flat/base'],
   ...nx.configs['flat/typescript'],
   ...nx.configs['flat/javascript'],
-  {
-    ignores: ['**/dist'],
-  },
   {
     files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
     rules: {
@@ -25,18 +24,6 @@ export default [
       ],
     },
   },
-  {
-    files: [
-      '**/*.ts',
-      '**/*.tsx',
-      '**/*.cts',
-      '**/*.mts',
-      '**/*.js',
-      '**/*.jsx',
-      '**/*.cjs',
-      '**/*.mjs',
-    ],
-    // Override or add rules here
-    rules: {},
-  },
+  ...davdevx.configs['recommended/base'],
+  ...davdevx.configs.prettier,
 ];

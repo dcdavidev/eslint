@@ -1,4 +1,4 @@
-import { Linter } from 'eslint';
+import type { Linter } from 'eslint';
 import { defineConfig } from 'eslint/config';
 import jsdoc from 'eslint-plugin-jsdoc';
 

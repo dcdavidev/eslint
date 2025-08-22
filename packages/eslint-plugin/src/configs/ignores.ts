@@ -1,4 +1,4 @@
-import { Linter } from 'eslint';
+import type { Linter } from 'eslint';
 import { defineConfig, globalIgnores } from 'eslint/config';
 
 const configIgnores: Linter.Config[] = defineConfig([

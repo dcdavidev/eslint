@@ -1,4 +1,4 @@
-import { Linter } from 'eslint';
+import type { Linter } from 'eslint';
 
 import baseConfig from './base.js';
 import webpackConfig from './webpack.js';

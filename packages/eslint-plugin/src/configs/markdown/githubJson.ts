@@ -1,5 +1,5 @@
 import markdown from '@eslint/markdown';
-import { Linter } from 'eslint';
+import type { Linter } from 'eslint';
 import { defineConfig } from 'eslint/config';
 import { OFF } from 'src/utils/severity.js';
 

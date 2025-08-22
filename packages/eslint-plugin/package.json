@@ -16,9 +16,10 @@
     }
   },
   "dependencies": {
-    "tslib": "^2.3.0",
+    "@eslint/json": "^0.13.1",
     "eslint": "^9.8.0",
     "jsonc-eslint-parser": "^2.1.0",
-    "@eslint/json": "^0.13.1"
+    "tslib": "^2.3.0",
+    "@eslint/markdown": "^7.1.0"
   }
 }

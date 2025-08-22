@@ -1,7 +1,7 @@
 {
   "name": "@davdevx/eslint-plugin",
   "version": "0.0.1",
-  "private": true,
+  "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -26,6 +26,11 @@
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-sort-imports-requires": "^2.0.0",
     "globals": "^16.3.0",
-    "typescript-eslint": "^8.29.0"
+    "typescript-eslint": "^8.29.0",
+    "eslint-plugin-jsdoc": "^54.1.1",
+    "eslint-config-prettier": "^10.1.8"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

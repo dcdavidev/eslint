@@ -31,5 +31,11 @@
         "targetName": "lint"
       }
     }
-  ]
+  ],
+  "release": {
+    "projects": ["packages/*"],
+    "version": {
+      "conventionalCommits": true
+    }
+  }
 }

@@ -1,3 +1,17 @@
+## 0.3.0 (2025-08-22)
+
+### 🚀 Features
+
+- add type ([c3a1bbf](https://github.com/davdevx/eslint/commit/c3a1bbf))
+
+### 🩹 Fixes
+
+- remove src ([3bc6698](https://github.com/davdevx/eslint/commit/3bc6698))
+
+### ❤️ Thank You
+
+- Davide Di Criscito @davdevx
+
 ## 0.2.0 (2025-08-22)
 
 ### 🚀 Features

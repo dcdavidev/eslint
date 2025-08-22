@@ -9,12 +9,12 @@ First, install ESLint and this plugin:
 
 ```bash
 npm install --save-dev eslint @davdevx/eslint-plugin
-```
-
-or with Yarn:
-
-```bash
+# or with
 yarn add --dev eslint @davdevx/eslint-plugin
+# or with
+pnpm add -D eslint @davdevx/eslint-plugin
+# or with
+bun add -D eslint @davdevx/eslint-plugin
 ```
 
 ## Usage

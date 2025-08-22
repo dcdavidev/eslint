@@ -5,6 +5,8 @@ import configIgnores from './configs/ignores.js';
 import configJson from './configs/json.js';
 import markdownConfigs from './configs/markdown/index.js';
 import javascriptConfigs from './configs/javascript/index.js';
+import typescriptConfigs from './configs/typescript/index.js';
+import configJsdoc from './configs/jsdoc.js';
 
 type Configs =
   | 'ignores'
@@ -17,7 +19,11 @@ type Configs =
   | 'markdownCommonmarkToml'
   | 'javascriptBase'
   | 'javascriptWebpack'
-  | 'javascriptYarnPnp';
+  | 'javascriptYarnPnp'
+  | 'typescriptBase'
+  | 'typescriptWebpack'
+  | 'typescriptYarnPnp'
+  | 'jsdoc';
 
 type EslintPluginConfigs = Record<Configs, Linter.Config[]>;
 
@@ -53,6 +59,10 @@ export const configs: EslintPluginConfigs = {
   javascriptBase: javascriptConfigs.base,
   javascriptWebpack: javascriptConfigs.webpack,
   javascriptYarnPnp: javascriptConfigs.yarnPnp,
+  typescriptBase: typescriptConfigs.base,
+  typescriptWebpack: typescriptConfigs.webpack,
+  typescriptYarnPnp: typescriptConfigs.yarnPnp,
+  jsdoc: configJsdoc,
 };
 
 // Extends eslint plugin config object with the defined configurations

@@ -33,13 +33,19 @@
     }
   ],
   "release": {
+    "projects": ["packages/*"],
     "changelog": {
       "workspaceChangelog": false,
       "projectChangelogs": false
     },
-    "projects": ["packages/*"],
     "version": {
       "conventionalCommits": true
+    },
+    "git": {
+      "stageChanges": true,
+      "commit": true,
+      "tag": true,
+      "push": true
     }
   }
 }

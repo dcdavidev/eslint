@@ -7,7 +7,7 @@ find . -type f -name "eslint.config.mjs" | while IFS= read -r file; do
 done
 
 # 2. Run the nx release
-pnpm nx release --yes
+pnpm nx release --first-release --yes
 
 # 3. Restore backups -> back to eslint.config.mjs
 find . -type f -name "eslint.config.mjs.bak" | while IFS= read -r file; do

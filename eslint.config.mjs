@@ -1,4 +1,4 @@
-import davdevx from '@davdevx/eslint-plugin';
+import davdevx from '@dcdavidev/eslint-plugin';
 import nx from '@nx/eslint-plugin';
 
 export default [

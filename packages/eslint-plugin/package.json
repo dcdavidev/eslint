@@ -1,7 +1,25 @@
 {
-  "name": "@davdevx/eslint-plugin",
+  "name": "@dcdavidev/eslint-plugin",
+  "description": "A custom ESLint plugin with a set of useful rules and configurations.",
   "version": "0.3.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcdavidev/eslint-plugin.git",
+    "directory": "packages/eslint-plugin"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-plugin"
+  ],
+  "author": {
+    "name": "Davide Di Criscito",
+    "email": "dcdavidev@outlook.com"
+  },
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dcdavidev/eslint-plugin/issues"
+  },
+  "homepage": "https://github.com/dcdavidev/eslint/blob/main/packages/eslint-plugin/README.md",
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -16,19 +34,25 @@
     }
   },
   "dependencies": {
-    "@eslint/json": "^0.13.1",
-    "eslint": "^9.8.0",
-    "jsonc-eslint-parser": "^2.1.0",
-    "tslib": "^2.3.0",
-    "@eslint/markdown": "^7.1.0",
     "@eslint/js": "^9.33.0",
+    "@eslint/json": "^0.13.1",
+    "@eslint/markdown": "^7.1.0",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsdoc": "^54.1.1",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-sort-imports-requires": "^2.0.0",
     "globals": "^16.3.0",
-    "typescript-eslint": "^8.29.0",
-    "eslint-plugin-jsdoc": "^54.1.1",
-    "eslint-config-prettier": "^10.1.8"
+    "jsonc-eslint-parser": "^2.1.0",
+    "tslib": "^2.3.0",
+    "typescript-eslint": "^8.29.0"
+  },
+
+  "devDependencies": {
+    "eslint": "^9.34.0"
+  },
+  "peerDependencies": {
+    "eslint": "^9.34.0"
   },
   "publishConfig": {
     "access": "public"

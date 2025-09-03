@@ -7,7 +7,7 @@ find . -type f -name "eslint.config.mjs" | while IFS= read -r file; do
 done
 
 # 2. Run the nx build
-nx run-many -t build
+pnpm nx run-many -t build
 
 # 3. Restore backups -> back to eslint.config.mjs
 find . -type f -name "eslint.config.mjs.bak" | while IFS= read -r file; do

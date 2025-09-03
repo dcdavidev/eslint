@@ -1,19 +1,23 @@
 {
-  "name": "@davdevx/eslint",
+  "name": "@dcdavidev/eslint",
   "license": "MIT",
   "scripts": {
     "commit": "cz",
+    "scripts:exec": "find scripts -type f -name \"*.sh\" -print0 | xargs -0 chmod +x",
     "safe:build": "./scripts/safe-build.sh",
-    "presafe:build": "chmod +x ./scripts/safe-build.sh",
+    "presafe:build": "pnpm run scripts:exec",
     "safe:release": "./scripts/safe-release.sh",
-    "presafe:release": "chmod +x ./scripts/safe-release.sh"
+    "presafe:release": "pnpm run scripts:exec",
+    "safe:first-release": "./scripts/safe-first-release.sh",
+    "presafe:first-release": "pnpm run scripts:exec",
+    "postinstall": "pnpm run scripts:exec && pnpm run safe:build"
   },
   "private": true,
   "dependencies": {},
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
-    "@davdevx/eslint-plugin": "workspace:*",
+    "@dcdavidev/eslint-plugin": "workspace:*",
     "@eslint/js": "^9.33.0",
     "@eslint/json": "^0.13.1",
     "@eslint/markdown": "^7.1.0",
@@ -42,9 +46,6 @@
     "typescript": "~5.8.2",
     "typescript-eslint": "^8.29.0"
   },
-  "workspaces": [
-    "packages/*"
-  ],
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"

@@ -1,0 +1,9 @@
+packages:
+  - ./packages/*
+
+nodeLinker: hoisted
+
+onlyBuiltDependencies:
+  - '@swc/core'
+  - lefthook
+  - nx

@@ -21,7 +21,7 @@ jobs:
 
       - name: Read Node.js version from .nvmrc
         id: node-version
-        run: echo "NODE_VERSION=$(cat .nvmrc)" >> $GITHUB_ENV
+        run: echo "NODE_VERSION=$(cat .nvmrc | tr -d '[:space:]')" >> $GITHUB_ENV
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
@@ -32,7 +32,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ github.workspace }}/.nvmrc
+          node-version: ${{ env.NODE_VERSION }}
           cache: pnpm
 
       - name: Install dependencies

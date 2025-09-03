@@ -31,7 +31,8 @@
     "**/.next/**": true,
     "**/.cache/**": true,
     "**/.vite/**": true,
-    "LICENSE": true
+    "LICENSE": true,
+    "pnpm-lock.yaml": true
   },
   "search.exclude": {
     "**/node_modules": true,

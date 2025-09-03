@@ -7,6 +7,43 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@eslint/js':
+        specifier: ^9.34.0
+        version: 9.34.0
+      '@eslint/json':
+        specifier: ^0.13.2
+        version: 0.13.2
+      '@eslint/markdown':
+        specifier: ^7.2.0
+        version: 7.2.0
+      eslint-config-prettier:
+        specifier: ^10.1.8
+        version: 10.1.8(eslint@9.34.0(jiti@2.5.1))
+      eslint-plugin-import:
+        specifier: ^2.32.0
+        version: 2.32.0(@typescript-eslint/parser@8.42.0(eslint@9.34.0(jiti@2.5.1))(typescript@5.8.3))(eslint@9.34.0(jiti@2.5.1))
+      eslint-plugin-jsdoc:
+        specifier: ^54.3.1
+        version: 54.3.1(eslint@9.34.0(jiti@2.5.1))
+      eslint-plugin-prettier:
+        specifier: ^5.5.4
+        version: 5.5.4(eslint-config-prettier@10.1.8(eslint@9.34.0(jiti@2.5.1)))(eslint@9.34.0(jiti@2.5.1))(prettier@2.8.8)
+      eslint-plugin-simple-import-sort:
+        specifier: ^12.1.1
+        version: 12.1.1(eslint@9.34.0(jiti@2.5.1))
+      eslint-plugin-sort-imports-requires:
+        specifier: ^2.0.0
+        version: 2.0.0(eslint@9.34.0(jiti@2.5.1))
+      globals:
+        specifier: ^16.3.0
+        version: 16.3.0
+      jsonc-eslint-parser:
+        specifier: ^2.4.0
+        version: 2.4.0
+      typescript-eslint:
+        specifier: ^8.42.0
+        version: 8.42.0(eslint@9.34.0(jiti@2.5.1))(typescript@5.8.3)
     devDependencies:
       '@commitlint/cli':
         specifier: ^19.8.1
@@ -17,15 +54,6 @@ importers:
       '@dcdavidev/eslint-plugin':
         specifier: workspace:*
         version: link:packages/eslint-plugin
-      '@eslint/js':
-        specifier: ^9.33.0
-        version: 9.34.0
-      '@eslint/json':
-        specifier: ^0.13.1
-        version: 0.13.2
-      '@eslint/markdown':
-        specifier: ^7.1.0
-        version: 7.2.0
       '@nx/eslint':
         specifier: 21.4.0
         version: 21.4.0(@babel/traverse@7.28.3)(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.24)(typescript@5.8.3))(@swc/core@1.5.29(@swc/helpers@0.5.17))(@zkochan/js-yaml@0.0.7)(eslint@9.34.0(jiti@2.5.1))(nx@21.4.0(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.17))(@swc/types@0.1.24)(typescript@5.8.3))(@swc/core@1.5.29(@swc/helpers@0.5.17)))
@@ -56,30 +84,6 @@ importers:
       eslint:
         specifier: ^9.8.0
         version: 9.34.0(jiti@2.5.1)
-      eslint-config-prettier:
-        specifier: ^10.1.8
-        version: 10.1.8(eslint@9.34.0(jiti@2.5.1))
-      eslint-plugin-import:
-        specifier: ^2.32.0
-        version: 2.32.0(@typescript-eslint/parser@8.42.0(eslint@9.34.0(jiti@2.5.1))(typescript@5.8.3))(eslint@9.34.0(jiti@2.5.1))
-      eslint-plugin-jsdoc:
-        specifier: ^54.1.1
-        version: 54.3.1(eslint@9.34.0(jiti@2.5.1))
-      eslint-plugin-prettier:
-        specifier: ^5.5.4
-        version: 5.5.4(eslint-config-prettier@10.1.8(eslint@9.34.0(jiti@2.5.1)))(eslint@9.34.0(jiti@2.5.1))(prettier@2.8.8)
-      eslint-plugin-simple-import-sort:
-        specifier: ^12.1.1
-        version: 12.1.1(eslint@9.34.0(jiti@2.5.1))
-      eslint-plugin-sort-imports-requires:
-        specifier: ^2.0.0
-        version: 2.0.0(eslint@9.34.0(jiti@2.5.1))
-      globals:
-        specifier: ^16.3.0
-        version: 16.3.0
-      jsonc-eslint-parser:
-        specifier: ^2.4.0
-        version: 2.4.0
       lefthook:
         specifier: ^1.12.3
         version: 1.12.3
@@ -95,9 +99,6 @@ importers:
       typescript:
         specifier: ~5.8.2
         version: 5.8.3
-      typescript-eslint:
-        specifier: ^8.29.0
-        version: 8.42.0(eslint@9.34.0(jiti@2.5.1))(typescript@5.8.3)
 
   packages/eslint-plugin:
     dependencies:
